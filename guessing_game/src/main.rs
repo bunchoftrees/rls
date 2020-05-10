@@ -1,6 +1,7 @@
-use rand::Rng;
 use std::cmp::Ordering;
 use std::io::{self, Write};
+
+use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
@@ -37,7 +38,7 @@ fn main() {
             Ordering::Equal => {
                 println!("You win!");
                 counter += 1;
-                println!("You took {} counter to win!", counter);
+                println!("You took {} tries to win!", counter);
                 break;
             }
         }
